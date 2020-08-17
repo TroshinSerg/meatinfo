@@ -1,0 +1,28 @@
+.search-block {
+  width: 100%;
+  max-width: 940px;
+
+  &__form {
+    display: flex;
+
+    &-field {
+      flex-grow: 1;
+    }
+
+    &-btn {
+      position: relative;
+      width: 64px;
+      margin-left: -1px;
+      flex-shrink: 0;
+      border-radius: 0 3px 3px 0;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        fill: $white;
+      }
+    }
+  }
+}
