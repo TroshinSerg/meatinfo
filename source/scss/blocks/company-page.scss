@@ -1,0 +1,87 @@
+.company-page {
+  &__header {
+    &-backward {
+      margin-bottom: 12px;
+    }
+    &-bottom {
+
+    }
+
+    &-info {
+      @include list-reset();
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+
+      &-item {
+        display: flex;
+        margin-right: 24px;
+        
+        @include text(12px, 16px, $grey);
+
+        svg {
+          margin-right: 6px;
+          fill: $grey;
+          align-self: center;
+        }
+
+        span {
+          align-self: center;
+        }
+
+        a {align-self: center;
+          color: $grey;
+
+          &:hover,
+          &:focus {
+            outline: none;
+            text-decoration: underline;
+          }
+
+          &:active {
+            opacity: .7;
+          }
+        }
+      }
+    }
+  }
+
+  &__heading {
+    display: flex;
+    margin: 0 0 12px;
+
+    &-icon {
+      margin-right: 10px;
+      align-self: center;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .company-page {
+    &__header {
+      &-bottom {
+        display: flex;
+        justify-content: space-between;
+      }
+      &-info {
+        margin-bottom: 0;
+
+        &-item {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    &__backward {
+      margin-bottom: 16px;
+    }
+
+    &__heading {
+      margin-bottom: 8px;
+    }
+
+
+  }
+}

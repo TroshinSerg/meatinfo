@@ -1,0 +1,42 @@
+.backward-link {
+  $self: &;
+  
+  display: inline-flex;
+
+  @include text(12px, 16px, $blue);
+
+  &__icon {
+    margin-right: 8px;
+    fill: $blue;
+    align-self: center;
+  }
+
+  &__text {
+    align-self: center;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $blue-hover;
+
+    #{$self}__icon {
+      fill: $blue-hover;
+    }
+  }
+  
+  &:active {
+    color: $blue-active;
+
+    #{$self}__icon {
+      fill: $blue-active;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .backward-link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
