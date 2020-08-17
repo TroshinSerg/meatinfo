@@ -29,7 +29,7 @@ gulp.task('server', function() {
 	});
 
 	 gulp.watch('source/scss/**/*.scss', gulp.series('sass'));
-   gulp.watch('source/pug/**/*.html', gulp.series('html', 'refresh'));
+   gulp.watch('source/**/*.html', gulp.series('html', 'refresh'));
 	 gulp.watch('source/icons/*.svg', gulp.series('sprite', 'html', 'refresh'));
 	 gulp.watch('source/js/*.js', gulp.series('scripts'));
 	 gulp.watch('source/img/**/*.{png,jpg,svg,webp}', gulp.series('img', 'webp'));

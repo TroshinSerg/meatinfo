@@ -1,3 +1,14 @@
 .header {
+  &__line {
+    min-height: 44px;
 
+    &--top {
+      background-color: $blue;
+    }
+
+    &--user {
+      background-color: $smoky2;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
 }
