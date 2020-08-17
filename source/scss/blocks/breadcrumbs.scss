@@ -1,0 +1,43 @@
+.breadcrumbs {
+  $self: &;
+
+  @include list-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-right: 4px;
+    color: $grey;
+
+    &::after {
+      content: "/";
+    }
+
+    &--current {
+      margin-right: 0;
+      
+      &::after {
+        display: none;
+      }
+
+      #{$self}__link {
+        color: $grey2;
+      }
+    }
+  }
+
+  &__link {
+    @include text(12px, 16px, $grey);
+
+    &:hover,
+    &:focus {
+      outline: none;
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: .7;
+    }
+  }
+}
