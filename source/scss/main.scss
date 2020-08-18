@@ -3,7 +3,9 @@
 @import "fonts.scss";
 @import "normalize";
 @import "global.scss";
-
+@import "vendor/owl.carousel.min";
+@import "vendor/owl.theme.default";
+@import "vendor/magnific-popup";
 
 @import "blocks/breadcrumbs.scss";
 @import "blocks/search-block.scss";
