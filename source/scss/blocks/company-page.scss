@@ -55,6 +55,204 @@
       align-self: center;
     }
   }
+
+  &__section {
+    margin-bottom: 48px;
+
+    &-header {
+      margin-bottom: 16px;
+      padding: 8px 0;
+      border-bottom: solid 1px $smoky3;
+    }
+    &-heading {
+      margin: 0;
+    }
+  }
+
+  &__table {
+    @include text(12px, 16px);
+    border-collapse: collapse;
+
+    &-row {
+      border-bottom: solid 1px $smoky3;
+    }
+
+    &-th {
+      padding: 8px 4px;
+      //padding: 8px 16px;
+
+      @include text(12px, 16px);
+      font-weight: 400;
+      text-align: left;
+      background-color: $smoky;
+
+      &--first {
+        width: 24px;
+        min-width: 24px;
+        padding-left: 0;
+        border-radius: 3px 0 0 3px;
+        //84
+      }
+      &--ad {
+        //286
+      }
+      &--time {
+        //56
+      }
+      &--view {//60
+      }
+      &--author {
+        //238
+        //padding-right: 16px;
+        border-radius: 0 3px 3px 0;
+      }
+
+      svg {
+        fill: $base-color;
+      }
+    }
+
+    &-desktop {
+      display: none;
+    } 
+
+    &-cell {
+      padding: 4px;
+
+      &--first {
+        position: relative;
+        width: 24px;
+        height: 72px;
+        padding: 0;
+      }
+      &--ad {}
+      &--time {}
+      &--view {}
+      &--author {
+        //padding-right: 16px;
+      }
+
+      a {
+        color: $blue;
+
+        &:hover,
+        &:focus {
+          outline: none;
+          text-decoration: underline;
+        }
+
+        &:active {}
+      }
+    }
+
+    &-tag {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      display: block;
+      height: 60px;
+      padding: 4px 2px;
+      writing-mode: vertical-lr;
+      
+      @include text(11px, 16px, $white);
+      font-weight: 500;
+      text-align: center;
+      border-radius: 3px;
+      transform: translateY(-50%) rotate(180deg);
+
+      &--bg-blue {
+        background-color: $blue2;
+      }
+      &--bg-red {
+        background-color: $red;
+      }
+    }
+  }
+
+  &__ad-author {
+    display: block;
+
+    &-photo {
+      width: 30px;
+      height: 40px;
+      border-radius: 3px;
+      //margin-right: 8px;
+      margin-bottom: 8px;
+      flex-shrink: 0;
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-info {
+      align-self: center;
+    }
+
+    &-name {
+    }
+    &-company {
+      color: $grey;
+    }
+  }
+}
+
+
+@media screen and (min-width: $mobile-width) {
+  .company-page {
+    &__ad-author {
+      display: flex;
+
+      &-photo {
+        margin-bottom: 0;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $mobile-landscape-width) {
+  .company-page {
+    &__table {
+      &-th {
+        padding: 8px;
+
+        &--first {
+          width: 76px;
+          height: auto;
+          padding: 8px;
+        }
+      }
+
+      &-cell {
+        padding: 8px;
+
+        &--first {
+          width: 76px;
+          height: auto;
+          padding: 8px;
+        }
+      }
+
+      &-tag {
+        position: static;
+        width: 60px;
+        height: auto;
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+      }
+    }
+
+    &__ad-author {
+      &-photo {
+        margin-bottom: 0;
+        margin-right: 8px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -82,6 +280,47 @@
       margin-bottom: 8px;
     }
 
+    &__table {
+      width: 100%;
 
+      &-th {
+        &--first {
+          width: 76px;
+          height: auto;
+          padding-left: 16px;
+        }
+
+        &--author {
+          padding-right: 16px;
+        }
+      }
+
+      &-cell {
+        &--first {
+          width: 76px;
+          height: auto;
+          padding-left: 16px;
+        }
+
+        &--author {
+          padding-right: 16px;
+        }
+      }
+
+      &-tag {
+        position: static;
+        width: 60px;
+        height: auto;
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+      }
+
+      &-mobile {
+        display: none;
+      }
+      &-desktop {
+        display: block;
+      }
+    }
   }
 }

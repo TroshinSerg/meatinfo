@@ -42,6 +42,7 @@
                 <input class="field__input field__input--search" type="search" name="search" placeholder="Поиск по компаниям">
               </label>
               <button class="search-block__form-btn btn" type="submit">
+                <span class="visually-hidden">Искать</span>
                 <svg width="18" height="18">
                   <use xlink:href="#icon-loupe"></use>
                 </svg>
@@ -77,6 +78,234 @@
                 <a class="company-page__header-btn btn btn--theme-outline-green" href="#">Работаете в этой компании?</a>
               </div>
             </header>
+            <section class="company-page__section">
+              <header class="company-page__section-header">
+                <h2 class="company-page__section-heading heading heading--size-medium">Последние объявления сотрудников компании</h2>
+              </header>
+              <table class="company-page__table">
+                <thead>
+                  <tr>
+                    <th class="company-page__table-th company-page__table-th--first">&nbsp;</th>
+                    <th class="company-page__table-th company-page__table-th--ad">Объявление</th>
+                    <th class="company-page__table-th company-page__table-th--time">
+                      <svg class="company-page__table-mobile" width="14" height="14" aria-hidden="true">
+                        <use xlink:href="#icon-calendar"></use>
+                      </svg>
+                      <span class="company-page__table-desktop">Время<span>
+                    </th>
+                    <th class="company-page__table-th company-page__table-th--view">
+                      <svg width="18" height="10" aria-hidden="true">
+                        <use xlink:href="#icon-view"></use>
+                      </svg>
+                    </th>
+                    <th class="company-page__table-th company-page__table-th--author">Опубликовал</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="company-page__table-row">
+                    <td class="company-page__table-cell company-page__table-cell--first">
+                      <span class="company-page__table-tag company-page__table-tag--bg-blue">Продам</span>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--ad">
+                      <a href="#">Желудки куриные очищенные 60 руб.</a>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--time">
+                      <time datetime="2020-02-05" title="5 февраля 2020 года">5 фев</time>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--view">
+                      155
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--author">
+                      <a class="company-page__ad-author" href="#">
+                        <div class="company-page__ad-author-photo">
+                          <picture>
+                            <source type="image/webp" srcset="img/ad-default-avatar.webp 1x, img/ad-default-avatar@2x.webp 2x">
+                            <img src="img/ad-default-avatar.jpg" srcset="img/ad-default-avatar@2x.jpg 2x" width="30" height="40" alt="Татьяна Лобач">
+                          </picture>
+                        </div>
+                        <div class="company-page__ad-author-info">
+                          <div class="company-page__ad-author-name">Татьяна Лобач</div>
+                          <div class="company-page__ad-author-company">Орехово-Зуевский мясокомбинат</div>
+                        </div>
+                        
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="company-page__table-row">
+                    <td class="company-page__table-cell company-page__table-cell--first">
+                      <span class="company-page__table-tag company-page__table-tag--bg-blue">Продам</span>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--ad">
+                      <a href="#">ГоленьЦБ(подл) 100р, Желудки кур.очиш 60 р</a>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--time">
+                      <time datetime="2020-01-27" title="27 января 2020 года">27 янв</time>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--view">
+                      185
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--author">
+                      <a class="company-page__ad-author" href="#">
+                        <div class="company-page__ad-author-photo">
+                          <picture>
+                            <source type="image/webp" srcset="img/ad-default-avatar.webp 1x, img/ad-default-avatar@2x.webp 2x">
+                            <img src="img/ad-default-avatar.jpg" srcset="img/ad-default-avatar@2x.jpg 2x" width="30" height="40" alt="Татьяна Лобач">
+                          </picture>
+                        </div>
+                        <div class="company-page__ad-author-info">
+                          <div class="company-page__ad-author-name">Татьяна Лобач</div>
+                          <div class="company-page__ad-author-company">Орехово-Зуевский мясокомбинат</div>
+                        </div>
+                        
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="company-page__table-row">
+                    <td class="company-page__table-cell company-page__table-cell--first">
+                      <span class="company-page__table-tag company-page__table-tag--bg-blue">Продам</span>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--ad">
+                      <a href="#">Курица, Индейка, Говядина, Свинина от МК</a>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--time">
+                      <time datetime="2020-04-21" title="21 апреля 2020 года">21 апр</time>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--view">
+                      42609
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--author">
+                      <a class="company-page__ad-author" href="#">
+                        <div class="company-page__ad-author-photo">
+                          <picture>
+                            <source type="image/webp" srcset="img/ad-default-avatar.webp 1x, img/ad-default-avatar@2x.webp 2x">
+                              <img src="img/ad-default-avatar.jpg" srcset="img/ad-default-avatar@2x.jpg 2x" width="30" height="40" alt="Татьяна Лобач">
+                          </picture>
+                        </div>
+                        <div class="company-page__ad-author-info">
+                          <div class="company-page__ad-author-name">Татьяна Лобач</div>
+                          <div class="company-page__ad-author-company">Орехово-Зуевский мясокомбинат</div>
+                        </div>
+                        
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="company-page__table-row">
+                    <td class="company-page__table-cell company-page__table-cell--first">
+                      <span class="company-page__table-tag company-page__table-tag--bg-red">Куплю</span>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--ad">
+                      <a href="#">ГоленьЦБ(подл) 100р, Желудки кур.очиш 60 р</a>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--time">
+                      <time datetime="2020-02-05" title="27 февраля 2020 года">27 фев</time>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--view">
+                      319
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--author">
+                      <a class="company-page__ad-author" href="#">
+                        <div class="company-page__ad-author-photo">
+                          <picture>
+                            <source type="image/webp" srcset="img/ad-default-avatar.webp 1x, img/ad-default-avatar@2x.webp 2x">
+                            <img src="img/ad-default-avatar.jpg" srcset="img/ad-default-avatar@2x.jpg 2x" width="30" height="40" alt="Татьяна Лобач">
+                          </picture>
+                        </div>
+                        <div class="company-page__ad-author-info">
+                          <div class="company-page__ad-author-name">Татьяна Лобач</div>
+                          <div class="company-page__ad-author-company">Орехово-Зуевский мясокомбинат</div>
+                        </div>
+                        
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="company-page__table-row">
+                    <td class="company-page__table-cell company-page__table-cell--first">
+                      <span class="company-page__table-tag company-page__table-tag--bg-blue">Продам</span>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--ad">
+                      <a href="#">Курица, Индейка, Говядина, Свинина от МК</a>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--time">
+                      <time datetime="2020-02-05" title="7 февраля 2020 года">7 фев</time>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--view">
+                      10072
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--author">
+                      <a class="company-page__ad-author" href="#">
+                        <div class="company-page__ad-author-photo">
+                          <picture>
+                            <source type="image/webp" srcset="img/ad-default-avatar.webp 1x, img/ad-default-avatar@2x.webp 2x">
+                            <img src="img/ad-default-avatar.jpg" srcset="img/ad-default-avatar@2x.jpg 2x" width="30" height="40" alt="Татьяна Лобач">
+                          </picture>
+                        </div>
+                        <div class="company-page__ad-author-info">
+                          <div class="company-page__ad-author-name">Татьяна Лобач</div>
+                          <div class="company-page__ad-author-company">Орехово-Зуевский мясокомбинат</div>
+                        </div>
+                        
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="company-page__table-row">
+                    <td class="company-page__table-cell company-page__table-cell--first">
+                      <span class="company-page__table-tag company-page__table-tag--bg-blue">Продам</span>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--ad">
+                      <a href="#">Фарш куриный ММО люкс 40руб/кг</a>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--time">
+                      <time datetime="2020-02-07" title="7 февраля 2020 года">7 фев</time>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--view">
+                      300
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--author">
+                      <a class="company-page__ad-author" href="#">
+                        <div class="company-page__ad-author-photo">
+                          <picture>
+                            <source type="image/webp" srcset="img/ad-vitaliy-pchelintsev.webp 1x, img/ad-vitaliy-pchelintsev@2x.webp 2x">
+                            <img src="img/ad-vitaliy-pchelintsev.jpg" srcset="img/ad-vitaliy-pchelintsev@2x.jpg 2x" width="30" height="40" alt="Виталий Пчелинцев">
+                          </picture>
+                        </div>
+                        <div class="company-page__ad-author-info">
+                          <div class="company-page__ad-author-name">Виталий Пчелинцев</div>
+                          <div class="company-page__ad-author-company">ООО ОКЕАНФИШ</div>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="company-page__table-row">
+                    <td class="company-page__table-cell company-page__table-cell--first">
+                      <span class="company-page__table-tag company-page__table-tag--bg-blue">Продам</span>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--ad">
+                      <a href="#">Голень ЦБ ГОСТ 75 руб/кг</a>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--time">
+                      <time datetime="2020-02-7" title="7 февраля 2020 года">7 фев</time>
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--view">
+                      319
+                    </td>
+                    <td class="company-page__table-cell company-page__table-cell--author">
+                      <a class="company-page__ad-author" href="#">
+                        <div class="company-page__ad-author-photo">
+                          <picture>
+                            <source type="image/webp" srcset="img/ad-vitaliy-pchelintsev.webp 1x, img/ad-vitaliy-pchelintsev@2x.webp 2x">
+                            <img src="img/ad-vitaliy-pchelintsev.jpg" srcset="img/ad-vitaliy-pchelintsev@2x.jpg 2x" width="30" height="40" alt="Виталий Пчелинцев">
+                          </picture>
+                        </div>
+                        <div class="company-page__ad-author-info">
+                          <div class="company-page__ad-author-name">Виталий Пчелинцев</div>
+                          <div class="company-page__ad-author-company">ООО ОКЕАНФИШ</div>
+                        </div>   
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
           </article>
         </div>
         <div class="layout__aside">

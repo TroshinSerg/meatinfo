@@ -1,11 +1,19 @@
 .heading {
   @include text(20px, 26px);
   font-weight: 500;
+
+  &--size-medium {
+    @include text(20px, 24px);
+  }
 }
 
 @media screen and (min-width: $tablet-width) {
   .heading {
     font-size: 24px;
     line-height: 32px;
+
+    &--size-medium {
+      @include text(19px, 28px);
+    }
   }
 }
