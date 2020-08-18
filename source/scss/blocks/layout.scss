@@ -21,3 +21,30 @@
     margin-bottom: 32px;
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .layout {
+    &__inner {
+      display: flex;
+    }
+    
+    &__main {
+      margin-right: 20px;
+      flex-grow: 1;
+    }
+
+    &__aside {
+      display: block;
+      width: 160px;
+      flex-shrink: 0;
+
+      &-banner {
+        margin-bottom: 20px;
+        
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+}
